@@ -46,7 +46,7 @@ with st.form("formulario_reserva"):
     tiempo_espera = st.number_input("Tiempo de espera (días)", min_value=0, value=10)
     solicitudes = st.slider("Total solicitudes especiales", 0, 5, 1)
     cambios = st.slider("Cambios de reserva", 0, 5, 0)
-    cancelaciones_previas = st.slider("Cancelaciones previas", 0, 3, 0)
+    cancelaciones_previas = st.slider("Cancelaciones previas", 0, 50, 0)
     reservas_previas = st.slider("Reservas previas no canceladas", 0, 5, 0)
     parqueo = st.slider("N° de plazas de aparcamiento solicitadas", 0, 3, 1)
     lista_espera = st.slider("Días en lista de espera", 0, 10, 0)
